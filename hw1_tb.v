@@ -16,9 +16,9 @@ always begin
 end
 
 always @(posedge clk) begin
-    A <= { 4'd15, 4'd7, 4'd3, 4'd10 };
+    A <= { 4'd15, 4'd7, 4'd8, 4'd10 };
     x <= { 4'd6, 4'd11 };
-    y_true <= { 9'd167, 9'd128 };
+    y_true <= { 9'd167, 9'd158 };
 end
 
 always @(posedge clk) begin
