@@ -21,7 +21,7 @@ always @(posedge clk) begin
     y_true <= { 9'd167, 9'd158 };
 end
 
-always @(posedge clk) begin
+always @(negedge clk) begin
     if (y != y_true) $display("incorrect!");
     else $display("correct");
     $finish;
